@@ -25,8 +25,8 @@ Built with Django (backend) and React + Vite + Material UI (frontend).
 ## 1. Clone the Repository
 
 ```bash
-git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
-cd your-repo-name
+git clone [https://github.com/Fene-87/Truck-Logger.git](https://github.com/Fene-87/Truck-Logger.git)
+cd  spotter_assessment
 
 ## Backend Setup
 
