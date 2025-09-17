@@ -53,6 +53,9 @@ npm run dev
 
 # The frontend will run at http://localhost:5173
 
+# Deployed backend url: https://truck-logger.onrender.com/
+# Deployed frontend url: https://truck-logger.onrender.com/
+
 Usage
 Open http://localhost:5173 in your browser.
 Enter your trip details and submit.

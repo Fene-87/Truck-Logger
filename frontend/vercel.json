@@ -1,0 +1,6 @@
+{
+    "rewrites": [
+      { "source": "/api/(.*)", "destination": "https://truck-logger.onrender.com/api/$1" }
+    ]
+  }
+  

@@ -15,16 +15,24 @@ function App() {
     setError(null);
     setResult(null);
     try {
-      const res = await fetch('/api/plan-trip/', {
+      const res = await fetch('/api/plan-trip', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(tripData),
       });
+  
+      const txt = await res.text();
+      let data: any;
+      try { data = txt ? JSON.parse(txt) : {}; } catch { data = { raw: txt }; }
+  
       if (!res.ok) {
-        const err = await res.json();
-        throw new Error(err.error || 'Failed to plan trip');
+        throw new Error(
+          data?.error ||
+          data?.detail ||
+          (typeof data === 'string' ? data : 'Failed to plan trip')
+        );
       }
-      const data = await res.json();
+  
       setResult(data);
     } catch (e: any) {
       setError(e.message || 'Unknown error');
