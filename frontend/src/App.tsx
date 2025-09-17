@@ -15,7 +15,7 @@ function App() {
     setError(null);
     setResult(null);
     try {
-      const res = await fetch('/api/plan-trip', {
+      const res = await fetch('/api/plan-trip/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(tripData),
