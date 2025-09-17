@@ -26,7 +26,6 @@ Built with Django (backend) and React + Vite + Material UI (frontend).
 
 ```bash
 git clone [https://github.com/Fene-87/Truck-Logger.git](https://github.com/Fene-87/Truck-Logger.git)
-cd  spotter_assessment
 
 ## Backend Setup
 
@@ -47,7 +46,7 @@ python manage.py runserver
 # The backend will run at http://127.0.0.1:8000
 
 ## Frontend Setup
-cd spotter_assessment/frontend
+cd frontend
 npm install
 npm run dev
 
